@@ -1,0 +1,144 @@
+* {
+  padding: 0;
+  margin: 0;
+
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  background-color: #fff;
+}
+
+header {
+  background-color: black;
+  color: beige;
+}
+
+main {
+  min-height: 100vh;
+}
+
+footer {
+  background-color: black;
+  color: beige;
+}
+
+footer .container {
+  padding-block: 16px;
+}
+
+.floating-button {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 64px;
+  height: 64px;
+  border: none;
+  border-radius: 50%;
+  background-color: black;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.floating-button:hover {
+  background-color: #45a049;
+}
+
+.floating-button:focus {
+  outline: none;
+}
+
+.note-detail-page {
+  padding: 1%;
+  margin: 2vh;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  position: relative;
+}
+
+#backButton {
+  position: absolute;
+  top: 0;
+  font-size: 2rem;
+  color: #dc3545; 
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: color 0.3s ease;
+}
+
+#backButton:hover {
+  color: #c82333;
+}
+
+.action-button {
+  margin-bottom: 1rem;
+}
+
+button {
+  padding: 8px 12px;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#archiveButton {
+  background-color: green;
+}
+
+#deleteButton {
+  background-color: red;
+  margin-left: 10px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.note-detail-page::before {
+  content: "";
+  display: block;
+  height: 2px;
+  background-color: #ccc;
+  width: 100%;
+  margin: 2rem 0 1rem 0;
+}
+
+.note-detail-page h2 {
+  font-size: 1.5rem;
+  color: black;
+  text-align: left;
+}
+
+.note-detail-page p {
+  font-size: 0.8rem;
+  line-height: 1.8;
+  color: #555;
+  text-align: justify;
+}
+
+.note-detail-page .created-at {
+  font-size: 0.6rem;
+  color: #999;
+  text-align: left;
+  margin-top: 0.5xrem;
+  margin-bottom: 1rem;
+}
+
+.note-loading {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+  font-size: 1rem;
+}

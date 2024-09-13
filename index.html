@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notes App</title>
+
+  <!-- Own Styles -->
+    <link rel="icon" href="/src/public/icons-notes.png"/>
+</head>
+<body>
+  <header>
+    <app-bar></app-bar>
+  </header>
+  <main>
+    <div class="container">
+      <section id="note" class="note">
+        <!-- Tambahkan komponen modal -->
+        <note-modal id="noteModal"></note-modal>
+
+        <div id="noteListContainer" class="noteListContainer">
+          <div class="note-loading" id="note-loading">Loading</div>
+
+          <note-list></note-list>
+        </div>
+
+        <!-- Container untuk menampilkan detail note -->
+        <div id="noteDetailContainer"></div>
+
+        <note-modal></note-modal>
+      </section>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <footer-bar></footer-bar>
+  </footer>
+
+  <!-- Tombol untuk membuka modal -->
+  <button id="addNoteButton" class="floating-button">+</button>
+</body>
+</html>
